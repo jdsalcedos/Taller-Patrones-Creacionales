@@ -4,7 +4,6 @@
  */
 package controller;
 
-
 import model.CreadorConcreto.DocumentoCreador;
 import model.abstracto.Documento;
 import model.abstracto.DocumentoFactory;
@@ -14,14 +13,15 @@ import view.VistaConsola;
  *
  * @author juand
  */
-public class Controlador{
+public class Controlador {
+
     private VistaConsola vista;
-    
-    public Controlador(){
-        vista = new VistaConsola(); 
+
+    public Controlador() {
+        vista = new VistaConsola();
     }
 
-    public void run(){
+    public void run() {
 
         String nombre = "";
         String tipo = "";
@@ -36,8 +36,7 @@ public class Controlador{
         DocumentoFactory fabrica = new DocumentoCreador();
         Documento doc = fabrica.crearDocumento(nombre, tipo.toLowerCase(), size);
 
-        vista.mostrarInfo("Impresion: " + doc.imprimir());
+        vista.mostrarInfo("Creacion: " + doc.crear());
         vista.mostrarInfo("Datos del documento: " + doc.mostrarDatos());
     }
 }
-

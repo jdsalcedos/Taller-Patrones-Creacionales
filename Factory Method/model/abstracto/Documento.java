@@ -20,7 +20,7 @@ public abstract class Documento{
         this.size = size;
     }
 
-    public abstract String imprimir();
+    public abstract String crear();
     public abstract String mostrarDatos();
     
 }
