@@ -7,7 +7,6 @@ package controller;
 /**
  *
  * @author juand
- * Clase Main que ejecuta el programa
  */
 public class ApiMain {
     public static void main(String[] args) {

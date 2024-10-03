@@ -34,9 +34,9 @@ public class Controlador {
         tipo = vista.leerDatoStr("\t" + "Digite el tipo del archivo");
         size = vista.leerDatoFloat("\t" + "Digite el tamaño del archivo");
 
-        //Crea la fabrica de documentos
+        // Crea la fabrica de documentos
         DocumentoFactory fabrica = new DocumentoCreador();
-        //Crea el documento
+        // Crea el documento
         Documento doc = fabrica.crearDocumento(nombre, tipo.toLowerCase(), size);
 
         vista.mostrarInfo("Creacion: " + doc.crear());
