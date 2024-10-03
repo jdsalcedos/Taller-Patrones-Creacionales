@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package model;
+package model; 
 
 /**
- *
+ * 
  * @author juand
  */
 public class Computador {
 
+    // Atributos privados que representan los componentes del computador
     private String procesador;
     private String ram;
     private String discoDuro;
     private String tarjetaGrafica;
 
+    // Métodos para establecer los componentes del computador
     public void setProcesador(String procesador) {
         this.procesador = procesador;
     }

@@ -16,18 +16,22 @@ public class VistaConsola {
     public VistaConsola() {
         sc = new Scanner(System.in);
     }
-    
-    public void mostrarDatos(String msj){
+
+    // Método para mostrar información al usuario
+    public void mostrarDatos(String msj) {
         System.out.println(msj);
     }
-    
-    public String leerDatoStr(String msj){
+
+    // Método para leer un dato de tipo String
+    public String leerDatoStr(String msj) {
         String dato = "";
         System.out.println(msj);
         dato = sc.nextLine();
         return dato;
     }
-    public int leerDatoInt(String msj){
+
+    // Método para leer un dato de tipo entero
+    public int leerDatoInt(String msj) {
         int dato;
         System.out.println(msj);
         dato = sc.nextInt();

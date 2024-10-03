@@ -5,16 +5,20 @@
 package model;
 
 import model.abstracto.Prototype;
+
 /**
  *
  * @author juand
  */
 public class Personaje implements Prototype {
+
+    // Atributos privados
     private String nombre;
     private int puntosVida;
     private String habilidades;
     private int nivel;
 
+    // Constructor
     public Personaje(String nombre, int puntosVida, String habilidades, int nivel) {
         this.nombre = nombre;
         this.puntosVida = puntosVida;
@@ -22,11 +26,13 @@ public class Personaje implements Prototype {
         this.nivel = nivel;
     }
 
+    // Método clone que retorna un objeto de tipo Personaje
     @Override
     public Prototype clone() {
         return new Personaje(this.nombre, this.puntosVida, this.habilidades, this.nivel);
     }
 
+    // Métodos get y set
     public String getNombre() {
         return nombre;
     }
@@ -58,10 +64,12 @@ public class Personaje implements Prototype {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-    
+
+    // Método toString
     @Override
     public String toString() {
-        return "Personaje {Nombre: '" + nombre + "'', Puntos de Vida: '" + puntosVida + "', Habilidades: '" + habilidades + "', Nivel: '" + nivel + "'}";
+        return "Personaje {Nombre: '" + nombre + "'', Puntos de Vida: '" + puntosVida + "', Habilidades: '"
+                + habilidades + "', Nivel: '" + nivel + "'}";
     }
-    
+
 }

@@ -8,6 +8,8 @@ package model.abstracto;
  *
  * @author juand
  */
+// Interfaz Prototype que contiene el método clone
 public interface Prototype extends Cloneable {
+    // Método clone que retorna un objeto de tipo Prototype
     Prototype clone();
 }

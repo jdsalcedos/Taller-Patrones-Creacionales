@@ -13,13 +13,16 @@ import model.abstracto.Prototype;
  * @author juand
  */
 public class PersonajesGestor {
+    // Map que contiene los prototipos de los personajes por tuplas de llave y valor
     private Map<String, Prototype> prototipos = new HashMap();
-    
-    public void addPrototype(String llave, Prototype prototipo){
+
+    // Método para agregar un prototipo al map
+    public void addPrototype(String llave, Prototype prototipo) {
         prototipos.put(llave, prototipo);
     }
-    
-    public Prototype getPrototype(String llave){
-        return  prototipos.get(llave).clone();
+
+    // Método para obtener un prototipo del map usando la llave
+    public Prototype getPrototype(String llave) {
+        return prototipos.get(llave).clone();
     }
 }

@@ -10,16 +10,19 @@ package model.abstracto;
  */
 public abstract class Documento{
 
+    //Atributos
     protected String nombre;
     protected String tipo;
     protected float size;
     
+    //Constructor
     public Documento(String nombre, String tipo, float size){
         this.nombre = nombre;
         this.tipo = tipo;
         this.size = size;
     }
 
+    //Métodos
     public abstract String crear();
     public abstract String mostrarDatos();
     

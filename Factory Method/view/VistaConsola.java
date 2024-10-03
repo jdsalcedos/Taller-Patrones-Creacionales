@@ -10,26 +10,29 @@ package view;
  */
 import java.util.Scanner;
 
-public class VistaConsola{
+public class VistaConsola {
 
     private Scanner sc;
 
-    public VistaConsola(){
+    public VistaConsola() {
         sc = new Scanner(System.in);
     }
 
-    public void mostrarInfo(String msj){
+    // Método para mostrar información al usuario
+    public void mostrarInfo(String msj) {
         System.out.println(msj);
     }
 
-    public String leerDatoStr(String msj){
+    // Método para mostrar un mensaje y leer un entero del usuario
+    public String leerDatoStr(String msj) {
         String dato = "";
         System.out.println(msj);
         dato = sc.nextLine();
         return dato;
     }
 
-    public float leerDatoFloat(String msj){
+    // Método para mostrar un mensaje y leer un float del usuario
+    public float leerDatoFloat(String msj) {
         float dato = 0;
         System.out.println(msj);
         dato = sc.nextFloat();

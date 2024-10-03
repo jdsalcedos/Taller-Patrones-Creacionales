@@ -23,33 +23,45 @@ public class Controller {
     public Controller() {
         vista = new VistaConsola();
     }
-
+// Método que ejecuta el proceso del programa 
     public void run() {
         int op = menu();
         while (op != 4) {
             if (op == 1) {
+                // Se crea un objeto de tipo PcOficinaBuilder
                 ComputadorBuilder builder = new PcOficinaBuilder();
+                // Se crea un objeto de tipo Director
                 Director director = new Director(builder);
+                // Se llama al metodo construirPc de la clase Director
                 director.construirPc();
+                // Se obtiene el computador creado
                 Computador pc = builder.obtenerComputador();
                 vista.mostrarDatos(pc.toString());
             } else if (op == 2) {
+
                 ComputadorBuilder builder = new PcGamingBuilder();
+
                 Director director = new Director(builder);
+
                 director.construirPc();
+
                 Computador pc = builder.obtenerComputador();
                 vista.mostrarDatos(pc.toString());
             } else if (op == 3) {
+
                 ComputadorBuilder builder = new PcPortatilBuilder();
+
                 Director director = new Director(builder);
+
                 director.construirPc();
+
                 Computador pc = builder.obtenerComputador();
                 vista.mostrarDatos(pc.toString());
             }
             op = menu();
         }
     }
-
+// Método que muestra el menu y retorna la opción seleccionada
     public int menu() {
         return vista.leerDatoInt("\tMENU"
                 + "\n1. Crear computador de oficina"

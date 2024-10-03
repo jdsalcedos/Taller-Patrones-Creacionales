@@ -12,10 +12,13 @@ import model.abstracto.Documento;
  */
 public class DocPDF extends Documento {
 
+    // Constructor de la clase DocPDF
     public DocPDF(String nombre, String tipo, float size) {
         super(nombre, tipo, size);
     }
 
+    // Override de los métodos abstractos de la clase Documento
+    // los cuales contienen los datos únicos del documento PDF
     @Override
     public String crear() {
         return "Creando documento PDF...";

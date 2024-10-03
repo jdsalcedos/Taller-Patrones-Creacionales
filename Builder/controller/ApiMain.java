@@ -12,6 +12,7 @@ import model.abstracto.ComputadorBuilder;
  *
  * @author juand
  */
+// Clase Main que ejecuta el programa
 public class ApiMain {
     public static void main(String[] args) {
         Controller control;

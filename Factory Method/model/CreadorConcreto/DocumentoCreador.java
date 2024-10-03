@@ -14,11 +14,14 @@ import model.*;
  */
 public class DocumentoCreador implements DocumentoFactory {
 
+    // Método para crear un documento comparando por elTipo
     @Override
     public Documento crearDocumento(String nombre, String tipo, float size) {
         if (tipo.equals("texto plano")) {
+            // Retorna un objeto de tipo TextoPlano
             return new TextoPlano(nombre, tipo, size);
         } else if (tipo.equals("pdf")) {
+            // Retorna un objeto de tipo PDF
             return new DocPDF(nombre, tipo, size);
         }
         return null;

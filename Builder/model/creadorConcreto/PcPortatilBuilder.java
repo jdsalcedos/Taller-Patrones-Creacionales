@@ -13,12 +13,16 @@ import model.abstracto.ComputadorBuilder;
  */
 public class PcPortatilBuilder implements ComputadorBuilder {
 
+    // Atributo privado que representa el computador en construcción
     private Computador pc;
 
+    // Constructor que inicializa el atributo pc con una nueva instancia de
+    // Computador
     public PcPortatilBuilder() {
         this.pc = new Computador();
     }
 
+    // Métodos que construyen el PC portátil
     @Override
     public void construirProcesador() {
         pc.setProcesador("i5 13th gen");
@@ -39,6 +43,7 @@ public class PcPortatilBuilder implements ComputadorBuilder {
         pc.setTarjetaGrafica("Integrada");
     }
 
+    // Método que devuelve el computador construido
     @Override
     public Computador obtenerComputador() {
         return this.pc;

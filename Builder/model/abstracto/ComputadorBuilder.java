@@ -7,11 +7,12 @@ package model.abstracto;
 import model.Computador;
 
 /**
- *
+ * 
  * @author juand
  */
 public interface ComputadorBuilder {
 
+    // Métodos para construir las partes del computador
     void construirProcesador();
 
     void construirRam();
@@ -20,5 +21,6 @@ public interface ComputadorBuilder {
 
     void construirTarjetaGrafica();
 
+    // Método para obtener el computador construido
     Computador obtenerComputador();
 }

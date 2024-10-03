@@ -8,8 +8,9 @@ package model.abstracto;
  *
  * @author juand
  */
-public interface DocumentoFactory{
+public interface DocumentoFactory {
 
-    Documento crearDocumento(String nombre, String tipo, float size); 
+    // Método para crear un documento con los respectivos atributos
+    Documento crearDocumento(String nombre, String tipo, float size);
 
 }

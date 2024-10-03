@@ -12,10 +12,13 @@ import model.abstracto.Documento;
  */
 public class TextoPlano extends Documento {
 
+    // Constructor de la clase TextoPlano
     public TextoPlano(String nombre, String tipo, float size) {
         super(nombre, tipo, size);
     }
 
+    // Override de los métodos abstractos de la clase Documento
+    // los cuales contienen los datos únicos del documento PDF
     @Override
     public String crear() {
         return "Creando  documento de texto plano...";
