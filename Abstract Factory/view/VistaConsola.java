@@ -10,10 +10,12 @@ public class VistaConsola {
         sc = new Scanner(System.in);
     }
 
+    // Método para mostrar información
     public void mostrarInformacion(String mensaje) {
         System.out.println(mensaje);
     }
 
+    // Método para leer un entero mediante consola
     public int leerDatoEntero(String mensaje) {
         int dato = 0;
         System.out.println(mensaje);
